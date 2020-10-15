@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CustUser">
+
+<select id="selectById" resultType="bit.com.a.model.CustomUserDetails">
+     SELECT *
+     FROM USERTABLE
+     WHERE ID = #{ loginId }
+</select>
+
+
+</mapper>
